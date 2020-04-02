@@ -1,0 +1,18 @@
+<table id="customers">
+    <thead>
+        <tr>
+            <th>User Name</th><th>{{userInfo.name}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- <tr>
+            <td>User Name:</td> <td>{{userInfo.name}}</td>
+        </tr> -->
+        <tr>
+            <td>Address</td><td><address-info [address]='userInfo.address'></address-info></td>
+        </tr>
+        <tr>
+            <td>Company</td> <td><company-info [company]='userInfo.company'></company-info></td>
+        </tr>
+    </tbody>
+</table>
