@@ -1,6 +1,17 @@
-<h2>User Details</h2>
+<h2>Assignment 02</h2>
+
+<h4>User Details</h4>
 
 <button (click)="getUserData()">Get Data</button>
 
 <hr>
 <user-info *ngFor="let user of userData" [user]='user'></user-info>
+
+<hr *ngIf="userData">
+<h2>Assignment 03</h2>
+
+<to-do></to-do>
+
+<hr>
+<h3>Comments</h3>
+<comment-list></comment-list>

@@ -1,0 +1,11 @@
+<h4>Add To Do Items</h4>
+
+<todo-form (sendRequest)="readMessage($event)"></todo-form>
+
+<h4 *ngIf="todoItemList.length">To Do List </h4>
+<ol>
+    <li *ngFor = "let item of todoItemList">
+        <span>{{item}}</span> 
+        <button (click)='removeItem(item)'>Complete</button>
+    </li>
+</ol>
